@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NIGO — New Collection</title>
+
+  <!-- Typography -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Introducing the brand new clothing collection by Nigo. Limited pieces, elevated craftsmanship.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext x=%2750%25%27 y=%2758%25%27 dominant-baseline=%27middle%27 text-anchor=%27middle%27 font-size=%2780%27%3EN%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+  <!-- ====== ACCESSIBLE, PURE-CSS BURGER ====== -->
+  <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true" />
+  <div class="page-wrap">
+    <header class="site-header" data-elevate>
+      <div class="header-inner">
+        <div class="left-tools">
+          <label class="burger" for="nav-toggle" aria-label="Open menu" role="button" aria-controls="site-nav" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </label>
+        </div>
+        <a href="#" class="logo" aria-label="Nigo Home">NIGO</a>
+        <nav class="desktop-nav" aria-label="Primary">
+          <ul>
+            <li><a href="#new">New</a></li>
+            <li><a href="#men">Men</a></li>
+            <li><a href="#women">Women</a></li>
+            <li><a href="#editorial">Editorial</a></li>
+            <li><a href="#about">About</a></li>
+          </ul>
+        </nav>
+        <div class="right-tools">
+          <button class="icon-btn" aria-label="Search">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2" fill="none"/><path d="M20 20l-3.5-3.5" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+          </button>
+          <button class="icon-btn" aria-label="Bag">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M6 8h12l-1 12H7L6 8Z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M9 8V6a3 3 0 0 1 6 0v2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile overlay nav (CSS controlled) -->
+      <nav id="site-nav" class="mobile-nav" aria-label="Mobile">
+        <div class="mobile-inner">
+          <a href="#new" class="mobile-link">New Arrivals</a>
+          <a href="#men" class="mobile-link">Men</a>
+          <a href="#women" class="mobile-link">Women</a>
+          <a href="#editorial" class="mobile-link">Editorial</a>
+          <a href="#about" class="mobile-link">About</a>
+          <div class="mobile-meta">
+            <a href="#" class="muted">Stores</a>
+            <a href="#" class="muted">Customer Service</a>
+            <a href="#" class="muted">Newsletter</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ====== HERO ====== -->
+    <section class="hero" id="new" aria-label="Nigo Hero Campaign">
+      <div class="hero-media">
+        <!-- Replace with your campaign images/videos -->
+        <picture>
+          <source media="(min-width: 1200px)" srcset="assets/hero@2x.jpg">
+          <img src="assets/hero.jpg" alt="Nigo campaign—model in tailored jacket against warm backdrop" loading="eager" />
+        </picture>
+      </div>
+      <div class="hero-content">
+        <h1 class="display">NIGO — New Collection</h1>
+        <p class="lead">Crafted silhouettes. Precise details. A study in modern luxury.</p>
+        <div class="cta-row">
+          <a class="btn btn-dark" href="#collection">Shop Collection</a>
+          <a class="btn btn-ghost" href="#editorial">View Editorial</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== MARQUEE ====== -->
+    <section class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>NIGO — LIMITED RELEASE · HAND-FINISHED · NATURAL FIBERS · MADE TO ENDURE · </span>
+        <span>NIGO — LIMITED RELEASE · HAND-FINISHED · NATURAL FIBERS · MADE TO ENDURE · </span>
+      </div>
+    </section>
+
+    <!-- ====== SPLIT PANELS (LV-style structure) ====== -->
+    <section class="split-panels" aria-label="Highlights">
+      <article class="panel panel-a">
+        <img src="assets/panel-a.jpg" alt="Close-up of textured jacket fabric with crisp lapel" loading="lazy">
+        <div class="panel-copy">
+          <h2>Tailored Precision</h2>
+          <p>Signature cuts in Japanese wool blends. Proportions balanced for motion and poise.</p>
+          <a class="link" href="#men">Shop Men</a>
+        </div>
+      </article>
+      <article class="panel panel-b">
+        <img src="assets/panel-b.jpg" alt="Flowing dress in natural light" loading="lazy">
+        <div class="panel-copy">
+          <h2>Fluid Forms</h2>
+          <p>Lightweight drape and tactile sheen—day to night with quiet confidence.</p>
+          <a class="link" href="#women">Shop Women</a>
+        </div>
+      </article>
+    </section>
+
+    <!-- ====== PRODUCT GRID ====== -->
+    <section class="collection" id="collection" aria-label="Collection Grid">
+      <header class="section-head">
+        <h2>Featured Pieces</h2>
+        <a class="link" href="#">View All</a>
+      </header>
+
+      <ul class="product-grid" role="list">
+        <!-- Card 1 -->
+        <li class="product-card">
+          <a href="#" class="card-media" aria-label="Open product: Atelier Jacket">
+            <img src="assets/p1.jpg" alt="Atelier Jacket in deep navy" loading="lazy">
+            <span class="badge">New</span>
+          </a>
+          <div class="card-info">
+            <h3 class="pname">Atelier Jacket</h3>
+            <p class="pmeta">Japanese Wool Blend — Navy</p>
+            <div class="price-row">
+              <span class="price">€1,280</span>
+              <button class="btn-mini" data-add="Atelier Jacket">Add to Bag</button>
+            </div>
+          </div>
+        </li>
+
+        <!-- Card 2 -->
+        <li class="product-card">
+          <a href="#" class="card-media" aria-label="Open product: Tabi Overshirt">
+            <img src="assets/p2.jpg" alt="Tabi Overshirt in earth tone" loading="lazy">
+          </a>
+          <div class="card-info">
+            <h3 class="pname">Tabi Overshirt</h3>
+            <p class="pmeta">Organic Cotton Sateen — Clay</p>
+            <div class="price-row">
+              <span class="price">€620</span>
+              <button class="btn-mini" data-add="Tabi Overshirt">Add to Bag</button>
+            </div>
+          </div>
+        </li>
+
+        <!-- Card 3 -->
+        <li class="product-card">
+          <a href="#" class="card-media" aria-label="Open product: Paper Denim">
+            <img src="assets/p3.jpg" alt="Paper Denim straight fit" loading="lazy">
+            <span class="badge badge-dark">Limited</span>
+          </a>
+          <div class="card-info">
+            <h3 class="pname">Paper Denim</h3>
+            <p class="pmeta">Raw Selvedge — Indigo</p>
+            <div class="price-row">
+              <span class="price">€410</span>
+              <button class="btn-mini" data-add="Paper Denim">Add to Bag</button>
+            </div>
+          </div>
+        </li>
+
+        <!-- Card 4 -->
+        <li class="product-card">
+          <a href="#" class="card-media" aria-label="Open product: Studio Dress">
+            <img src="assets/p4.jpg" alt="Studio Dress with minimal pleats" loading="lazy">
+          </a>
+          <div class="card-info">
+            <h3 class="pname">Studio Dress</h3>
+            <p class="pmeta">Cupro Blend — Noir</p>
+            <div class="price-row">
+              <span class="price">€960</span>
+              <button class="btn-mini" data-add="Studio Dress">Add to Bag</button>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ====== EDITORIAL MOSAIC ====== -->
+    <section class="editorial" id="editorial" aria-label="Editorial">
+      <header class="section-head">
+        <h2>Editorial</h2>
+        <a class="link" href="#">Read More</a>
+      </header>
+
+      <div class="mosaic">
+        <article class="tile tall">
+          <img src="assets/e1.jpg" alt="Backstage fitting—hands tailoring collar" loading="lazy">
+          <div class="tile-copy">
+            <h3>Inside the Atelier</h3>
+            <p>Quiet craftsmanship where patterns meet intuition.</p>
+          </div>
+        </article>
+        <article class="tile wide">
+          <img src="assets/e2.jpg" alt="Sunlit corridor with garments on rails" loading="lazy">
+          <div class="tile-copy">
+            <h3>Daylight & Drape</h3>
+            <p>Why natural light remains the final arbiter of fabric.</p>
+          </div>
+        </article>
+        <article class="tile">
+          <img src="assets/e3.jpg" alt="Detail of hand-stitched pocket" loading="lazy">
+          <div class="tile-copy">
+            <h3>Handwork</h3>
+            <p>Subtle irregularities that make a piece yours.</p>
+          </div>
+        </article>
+        <article class="tile">
+          <img src="assets/e4.jpg" alt="Model walking city street at dusk" loading="lazy">
+          <div class="tile-copy">
+            <h3>City as Runway</h3>
+            <p>Architecture as a dialogue partner to silhouette.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ====== ABOUT STRIP ====== -->
+    <section class="about" id="about" aria-label="About Nigo">
+      <div class="about-inner">
+        <h2>About the Collection</h2>
+        <p>
+          Designed by Nigo, this release channels purposeful minimalism—clarity of line, texture that whispers,
+          and construction meant to last. Limited production, responsible materials.
+        </p>
+        <a class="btn btn-dark" href="#">Discover Materials</a>
+      </div>
+    </section>
+
+    <!-- ====== FOOTER ====== -->
+    <footer class="site-footer" aria-label="Footer">
+      <div class="footer-grid">
+        <div>
+          <h4>Client Care</h4>
+          <ul>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Shipping & Returns</a></li>
+            <li><a href="#">Repairs</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Maison</h4>
+          <ul>
+            <li><a href="#">Sustainability</a></li>
+            <li><a href="#">Craftsmanship</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Follow</h4>
+          <ul class="socials">
+            <li><a href="#" aria-label="Instagram">Instagram</a></li>
+            <li><a href="#" aria-label="YouTube">YouTube</a></li>
+            <li><a href="#" aria-label="TikTok">TikTok</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Newsletter</h4>
+          <form class="newsletter" action="#" method="post" onsubmit="return false;">
+            <label for="email" class="sr-only">Email</label>
+            <input id="email" name="email" type="email" placeholder="Your email" required>
+            <button class="btn btn-ghost" type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="legal">
+        <small>© <span id="year"></span> NIGO. All rights reserved.</small>
+        <nav aria-label="Legal">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Cookies</a>
+        </nav>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/app.js" defer></script>
+</body>
+</html>
